@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="i61-mK-KIo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kue-1s-vth">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -52,12 +53,64 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lAX-cI-4X4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2118.840579710145" y="120.53571428571428"/>
+            <point key="canvasLocation" x="1209" y="814"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Ajustes-->
+        <scene sceneID="e1U-Ze-QDG">
+            <objects>
+                <viewController id="Dgc-z3-bps" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dAO-9q-ZfF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="gQK-J7-D0C"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Ajustes" image="gearshape.2.fill" catalog="system" id="iNb-Nc-mTD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="69G-Qo-Equ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1955" y="3"/>
+        </scene>
+        <!--Total da Compra-->
+        <scene sceneID="Sul-dF-eco">
+            <objects>
+                <viewController id="jZR-Yy-4Fe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2I3-lc-RHL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="gfK-FU-YOF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Total da Compra" image="Shopping" id="FTM-J4-i3q"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z16-99-U4w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2681" y="3"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="aav-fR-tdW">
+            <objects>
+                <tabBarController id="kue-1s-vth" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hQl-4y-qbQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="i61-mK-KIo" kind="relationship" relationship="viewControllers" id="pvK-DG-8jk"/>
+                        <segue destination="Dgc-z3-bps" kind="relationship" relationship="viewControllers" id="abe-7l-acr"/>
+                        <segue destination="jZR-Yy-4Fe" kind="relationship" relationship="viewControllers" id="BKb-Bb-oxf"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QKs-Bi-IdS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1954" y="-730"/>
+        </scene>
+        <!--Compras-->
         <scene sceneID="hx8-8A-hEX">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="i61-mK-KIo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Compras" image="Shopping" id="mAb-rb-pEX"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="JFv-uR-SAQ">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -70,10 +123,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ko-zH-jtH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1208.6956521739132" y="120.53571428571428"/>
+            <point key="canvasLocation" x="1209" y="4"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Shopping" width="22" height="22"/>
+        <image name="gearshape.2.fill" catalog="system" width="128" height="100"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
