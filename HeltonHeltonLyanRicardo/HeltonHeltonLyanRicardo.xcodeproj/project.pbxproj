@@ -11,10 +11,13 @@
 		98FB0A7C25A3FB83003B4F36 /* ShoppingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FB0A7B25A3FB83003B4F36 /* ShoppingItem.swift */; };
 		98FB9B912597C553008F6674 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FB9B902597C553008F6674 /* AppDelegate.swift */; };
 		98FB9B952597C553008F6674 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FB9B942597C553008F6674 /* ListTableViewController.swift */; };
-		98FB9B982597C553008F6674 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98FB9B962597C553008F6674 /* Main.storyboard */; };
 		98FB9B9B2597C553008F6674 /* HeltonHeltonLyanRicardo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 98FB9B992597C553008F6674 /* HeltonHeltonLyanRicardo.xcdatamodeld */; };
 		98FB9B9D2597C555008F6674 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98FB9B9C2597C555008F6674 /* Assets.xcassets */; };
 		98FB9BA02597C555008F6674 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98FB9B9E2597C555008F6674 /* LaunchScreen.storyboard */; };
+		EB1B058325AFDAEF00525FBA /* ShoppingSummary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1B057F25AFDAEE00525FBA /* ShoppingSummary.storyboard */; };
+		EB1B058425AFDAEF00525FBA /* ShoppingList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1B058025AFDAEF00525FBA /* ShoppingList.storyboard */; };
+		EB1B058525AFDAEF00525FBA /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1B058125AFDAEF00525FBA /* Settings.storyboard */; };
+		EB1B058625AFDAEF00525FBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1B058225AFDAEF00525FBA /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,11 +26,14 @@
 		98FB9B8D2597C553008F6674 /* HeltonHeltonLyanRicardo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeltonHeltonLyanRicardo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98FB9B902597C553008F6674 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98FB9B942597C553008F6674 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
-		98FB9B972597C553008F6674 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98FB9B9A2597C553008F6674 /* HeltonHeltonLyanRicardo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HeltonHeltonLyanRicardo.xcdatamodel; sourceTree = "<group>"; };
 		98FB9B9C2597C555008F6674 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98FB9B9F2597C555008F6674 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98FB9BA12597C555008F6674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB1B057F25AFDAEE00525FBA /* ShoppingSummary.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShoppingSummary.storyboard; sourceTree = "<group>"; };
+		EB1B058025AFDAEF00525FBA /* ShoppingList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShoppingList.storyboard; sourceTree = "<group>"; };
+		EB1B058125AFDAEF00525FBA /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		EB1B058225AFDAEF00525FBA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +66,60 @@
 		98FB9B8F2597C553008F6674 /* HeltonHeltonLyanRicardo */ = {
 			isa = PBXGroup;
 			children = (
-				98FB9B902597C553008F6674 /* AppDelegate.swift */,
-				98FB9B942597C553008F6674 /* ListTableViewController.swift */,
-				98FB0A7725A3F9CB003B4F36 /* UITableView+EmptyMessage.swift */,
-				98FB9B962597C553008F6674 /* Main.storyboard */,
-				98FB9B9C2597C555008F6674 /* Assets.xcassets */,
+				EB1B056325AFA6A200525FBA /* Main */,
+				EB1B057725AFD8F100525FBA /* View */,
+				EB1B056525AFA70B00525FBA /* ViewController */,
+				EB1B056425AFA6FC00525FBA /* Model */,
+				EB1B056625AFA71E00525FBA /* Extensions */,
+			);
+			path = HeltonHeltonLyanRicardo;
+			sourceTree = "<group>";
+		};
+		EB1B056325AFA6A200525FBA /* Main */ = {
+			isa = PBXGroup;
+			children = (
 				98FB9B9E2597C555008F6674 /* LaunchScreen.storyboard */,
 				98FB9BA12597C555008F6674 /* Info.plist */,
 				98FB9B992597C553008F6674 /* HeltonHeltonLyanRicardo.xcdatamodeld */,
+				98FB9B902597C553008F6674 /* AppDelegate.swift */,
+				98FB9B9C2597C555008F6674 /* Assets.xcassets */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EB1B056425AFA6FC00525FBA /* Model */ = {
+			isa = PBXGroup;
+			children = (
 				98FB0A7B25A3FB83003B4F36 /* ShoppingItem.swift */,
 			);
-			path = HeltonHeltonLyanRicardo;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB1B056525AFA70B00525FBA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				98FB9B942597C553008F6674 /* ListTableViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		EB1B056625AFA71E00525FBA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				98FB0A7725A3F9CB003B4F36 /* UITableView+EmptyMessage.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EB1B057725AFD8F100525FBA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB1B058225AFDAEF00525FBA /* Main.storyboard */,
+				EB1B058125AFDAEF00525FBA /* Settings.storyboard */,
+				EB1B058025AFDAEF00525FBA /* ShoppingList.storyboard */,
+				EB1B057F25AFDAEE00525FBA /* ShoppingSummary.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,9 +179,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB1B058325AFDAEF00525FBA /* ShoppingSummary.storyboard in Resources */,
 				98FB9BA02597C555008F6674 /* LaunchScreen.storyboard in Resources */,
+				EB1B058425AFDAEF00525FBA /* ShoppingList.storyboard in Resources */,
+				EB1B058625AFDAEF00525FBA /* Main.storyboard in Resources */,
 				98FB9B9D2597C555008F6674 /* Assets.xcassets in Resources */,
-				98FB9B982597C553008F6674 /* Main.storyboard in Resources */,
+				EB1B058525AFDAEF00525FBA /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,14 +206,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		98FB9B962597C553008F6674 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				98FB9B972597C553008F6674 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		98FB9B9E2597C555008F6674 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -295,7 +339,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = HeltonHeltonLyanRicardo/Info.plist;
+				INFOPLIST_FILE = "${SRCROOT}/HeltonHeltonLyanRicardo/Main/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,7 +357,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = HeltonHeltonLyanRicardo/Info.plist;
+				INFOPLIST_FILE = "${SRCROOT}/HeltonHeltonLyanRicardo/Main/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
