@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9875BECF25B3A63A00CED5F5 /* AddProduct.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9875BECE25B3A63A00CED5F5 /* AddProduct.storyboard */; };
 		98FB0A7825A3F9CB003B4F36 /* UITableView+EmptyMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FB0A7725A3F9CB003B4F36 /* UITableView+EmptyMessage.swift */; };
 		98FB0A7C25A3FB83003B4F36 /* ShoppingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FB0A7B25A3FB83003B4F36 /* ShoppingItem.swift */; };
 		98FB9B912597C553008F6674 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FB9B902597C553008F6674 /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9875BECE25B3A63A00CED5F5 /* AddProduct.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddProduct.storyboard; sourceTree = "<group>"; };
 		98FB0A7725A3F9CB003B4F36 /* UITableView+EmptyMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+EmptyMessage.swift"; sourceTree = "<group>"; };
 		98FB0A7B25A3FB83003B4F36 /* ShoppingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingItem.swift; sourceTree = "<group>"; };
 		98FB9B8D2597C553008F6674 /* HeltonHeltonLyanRicardo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeltonHeltonLyanRicardo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +120,7 @@
 				EB1B058125AFDAEF00525FBA /* Settings.storyboard */,
 				EB1B058025AFDAEF00525FBA /* ShoppingList.storyboard */,
 				EB1B057F25AFDAEE00525FBA /* ShoppingSummary.storyboard */,
+				9875BECE25B3A63A00CED5F5 /* AddProduct.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				98FB9BA02597C555008F6674 /* LaunchScreen.storyboard in Resources */,
 				EB1B058425AFDAEF00525FBA /* ShoppingList.storyboard in Resources */,
 				EB1B058625AFDAEF00525FBA /* Main.storyboard in Resources */,
+				9875BECF25B3A63A00CED5F5 /* AddProduct.storyboard in Resources */,
 				98FB9B9D2597C555008F6674 /* Assets.xcassets in Resources */,
 				EB1B058525AFDAEF00525FBA /* Settings.storyboard in Resources */,
 			);
