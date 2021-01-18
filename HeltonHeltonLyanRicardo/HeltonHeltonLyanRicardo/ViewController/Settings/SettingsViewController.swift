@@ -146,8 +146,14 @@ extension SettingsViewController: UITableViewDataSource, UITableViewDelegate {
             
             let state = self.states[indexPath.row]
             context.delete(state)
-            self.states.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: .fade)
+            
+            do {
+                try context.save()
+                self.states.remove(at: indexPath.row)
+                tableView.deleteRows(at: [indexPath], with: .fade)
+            } catch let error as NSError {
+                print("Could not save. \(error), \(error.userInfo)")
+            }
         }
     }
     
