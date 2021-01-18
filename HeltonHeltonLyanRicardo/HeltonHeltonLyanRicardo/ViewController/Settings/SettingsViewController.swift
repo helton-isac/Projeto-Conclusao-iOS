@@ -23,14 +23,41 @@ class SettingsViewController: UIViewController {
         }
     }
     
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.statesTableView.delegate = self
         self.statesTableView.dataSource = self
         
-        self.fetchStates()
+        NotificationCenter.default.addObserver(self, selector: #selector(self.defaultsChanged),
+                                               name: UserDefaults.didChangeNotification, object: nil)
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.fetchStates()
+        
+        UserDefaults.standard.synchronize()
+        self.updateScreenFields()
+    }
+
+    @objc func defaultsChanged() {
+        self.updateScreenFields()
+    }
+    
+    private func updateScreenFields() {
+        let defaults = UserDefaults.standard
+        self.quotationTextField.text = defaults.string(forKey: "quotation")
+        self.financialTaxTextField.text = defaults.string(forKey: "financial_tax")
+        
+        self.statesTableView.reloadData()
+    }
+    
     
     private func fetchStates() {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
