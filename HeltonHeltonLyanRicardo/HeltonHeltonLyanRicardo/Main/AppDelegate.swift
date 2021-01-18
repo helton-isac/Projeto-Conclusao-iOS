@@ -14,6 +14,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        var appDefaults = [String:String]()
+        appDefaults["quotation"] = "3.2"
+        appDefaults["financial_tax"] = "6.38"
+
+        UserDefaults.standard.register(defaults: appDefaults)
+        
         return true
     }
 
