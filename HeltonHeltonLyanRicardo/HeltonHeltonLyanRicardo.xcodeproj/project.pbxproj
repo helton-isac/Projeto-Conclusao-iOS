@@ -15,6 +15,7 @@
 		98FB9B9B2597C553008F6674 /* HeltonHeltonLyanRicardo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 98FB9B992597C553008F6674 /* HeltonHeltonLyanRicardo.xcdatamodeld */; };
 		98FB9B9D2597C555008F6674 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98FB9B9C2597C555008F6674 /* Assets.xcassets */; };
 		98FB9BA02597C555008F6674 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98FB9B9E2597C555008F6674 /* LaunchScreen.storyboard */; };
+		CC32DDAD25B6644100574795 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC32DDAC25B6644100574795 /* LaunchScreen.storyboard */; };
 		EB1B058325AFDAEF00525FBA /* ShoppingSummary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1B057F25AFDAEE00525FBA /* ShoppingSummary.storyboard */; };
 		EB1B058425AFDAEF00525FBA /* ShoppingList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1B058025AFDAEF00525FBA /* ShoppingList.storyboard */; };
 		EB1B058525AFDAEF00525FBA /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1B058125AFDAEF00525FBA /* Settings.storyboard */; };
@@ -35,6 +36,7 @@
 		98FB9B9C2597C555008F6674 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98FB9B9F2597C555008F6674 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98FB9BA12597C555008F6674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC32DDAC25B6644100574795 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB1B057F25AFDAEE00525FBA /* ShoppingSummary.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShoppingSummary.storyboard; sourceTree = "<group>"; };
 		EB1B058025AFDAEF00525FBA /* ShoppingList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShoppingList.storyboard; sourceTree = "<group>"; };
 		EB1B058125AFDAEF00525FBA /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 		98FB9B842597C553008F6674 = {
 			isa = PBXGroup;
 			children = (
+				CC32DDAC25B6644100574795 /* LaunchScreen.storyboard */,
 				98FB9B8F2597C553008F6674 /* HeltonHeltonLyanRicardo */,
 				98FB9B8E2597C553008F6674 /* Products */,
 			);
@@ -91,7 +94,6 @@
 				98FB9BA12597C555008F6674 /* Info.plist */,
 				98FB9B992597C553008F6674 /* HeltonHeltonLyanRicardo.xcdatamodeld */,
 				98FB9B902597C553008F6674 /* AppDelegate.swift */,
-				98FB9B9C2597C555008F6674 /* Assets.xcassets */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -99,6 +101,7 @@
 		EB1B056425AFA6FC00525FBA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				98FB9B9C2597C555008F6674 /* Assets.xcassets */,
 				98FB0A7B25A3FB83003B4F36 /* ShoppingItem.swift */,
 			);
 			path = Model;
@@ -205,6 +208,7 @@
 				EB1B058425AFDAEF00525FBA /* ShoppingList.storyboard in Resources */,
 				EB1B058625AFDAEF00525FBA /* Main.storyboard in Resources */,
 				9875BECF25B3A63A00CED5F5 /* AddProduct.storyboard in Resources */,
+				CC32DDAD25B6644100574795 /* LaunchScreen.storyboard in Resources */,
 				98FB9B9D2597C555008F6674 /* Assets.xcassets in Resources */,
 				EB1B058525AFDAEF00525FBA /* Settings.storyboard in Resources */,
 			);
