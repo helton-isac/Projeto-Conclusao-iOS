@@ -14,7 +14,6 @@
 		98FB9B952597C553008F6674 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FB9B942597C553008F6674 /* ListTableViewController.swift */; };
 		98FB9B9B2597C553008F6674 /* HeltonHeltonLyanRicardo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 98FB9B992597C553008F6674 /* HeltonHeltonLyanRicardo.xcdatamodeld */; };
 		98FB9B9D2597C555008F6674 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98FB9B9C2597C555008F6674 /* Assets.xcassets */; };
-		98FB9BA02597C555008F6674 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98FB9B9E2597C555008F6674 /* LaunchScreen.storyboard */; };
 		CC32DDAD25B6644100574795 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC32DDAC25B6644100574795 /* LaunchScreen.storyboard */; };
 		EB1B058325AFDAEF00525FBA /* ShoppingSummary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1B057F25AFDAEE00525FBA /* ShoppingSummary.storyboard */; };
 		EB1B058425AFDAEF00525FBA /* ShoppingList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1B058025AFDAEF00525FBA /* ShoppingList.storyboard */; };
@@ -34,7 +33,6 @@
 		98FB9B942597C553008F6674 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		98FB9B9A2597C553008F6674 /* HeltonHeltonLyanRicardo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HeltonHeltonLyanRicardo.xcdatamodel; sourceTree = "<group>"; };
 		98FB9B9C2597C555008F6674 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		98FB9B9F2597C555008F6674 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98FB9BA12597C555008F6674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC32DDAC25B6644100574795 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB1B057F25AFDAEE00525FBA /* ShoppingSummary.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShoppingSummary.storyboard; sourceTree = "<group>"; };
@@ -60,7 +58,6 @@
 		98FB9B842597C553008F6674 = {
 			isa = PBXGroup;
 			children = (
-				CC32DDAC25B6644100574795 /* LaunchScreen.storyboard */,
 				98FB9B8F2597C553008F6674 /* HeltonHeltonLyanRicardo */,
 				98FB9B8E2597C553008F6674 /* Products */,
 			);
@@ -90,7 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				EBCE761C25B63DEA007A471E /* Settings.bundle */,
-				98FB9B9E2597C555008F6674 /* LaunchScreen.storyboard */,
 				98FB9BA12597C555008F6674 /* Info.plist */,
 				98FB9B992597C553008F6674 /* HeltonHeltonLyanRicardo.xcdatamodeld */,
 				98FB9B902597C553008F6674 /* AppDelegate.swift */,
@@ -128,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				EB1B058225AFDAEF00525FBA /* Main.storyboard */,
+				CC32DDAC25B6644100574795 /* LaunchScreen.storyboard */,
 				EB1B058125AFDAEF00525FBA /* Settings.storyboard */,
 				EB1B058025AFDAEF00525FBA /* ShoppingList.storyboard */,
 				EB1B057F25AFDAEE00525FBA /* ShoppingSummary.storyboard */,
@@ -204,7 +201,6 @@
 			files = (
 				EBCE761D25B63DEA007A471E /* Settings.bundle in Resources */,
 				EB1B058325AFDAEF00525FBA /* ShoppingSummary.storyboard in Resources */,
-				98FB9BA02597C555008F6674 /* LaunchScreen.storyboard in Resources */,
 				EB1B058425AFDAEF00525FBA /* ShoppingList.storyboard in Resources */,
 				EB1B058625AFDAEF00525FBA /* Main.storyboard in Resources */,
 				9875BECF25B3A63A00CED5F5 /* AddProduct.storyboard in Resources */,
@@ -232,17 +228,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		98FB9B9E2597C555008F6674 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				98FB9B9F2597C555008F6674 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		98FB9BA22597C555008F6674 /* Debug */ = {
