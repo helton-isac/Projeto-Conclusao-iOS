@@ -118,6 +118,7 @@ class NewProductViewController: UIViewController {
         product.setValue(price, forKeyPath: "value")
         product.setValue(name, forKeyPath: "name")
         product.setValue(imageData, forKeyPath: "photo")
+        product.setValue(selectedState, forKey: "state")
         
         do {
             try context.save()

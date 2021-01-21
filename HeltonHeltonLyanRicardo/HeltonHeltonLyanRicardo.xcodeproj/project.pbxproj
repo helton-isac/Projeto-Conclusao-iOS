@@ -11,7 +11,7 @@
 		98FB0A7825A3F9CB003B4F36 /* UITableView+EmptyMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FB0A7725A3F9CB003B4F36 /* UITableView+EmptyMessage.swift */; };
 		98FB0A7C25A3FB83003B4F36 /* ShoppingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FB0A7B25A3FB83003B4F36 /* ShoppingItem.swift */; };
 		98FB9B912597C553008F6674 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FB9B902597C553008F6674 /* AppDelegate.swift */; };
-		98FB9B952597C553008F6674 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FB9B942597C553008F6674 /* ListTableViewController.swift */; };
+		98FB9B952597C553008F6674 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FB9B942597C553008F6674 /* ProductListViewController.swift */; };
 		98FB9B9B2597C553008F6674 /* HeltonHeltonLyanRicardo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 98FB9B992597C553008F6674 /* HeltonHeltonLyanRicardo.xcdatamodeld */; };
 		98FB9B9D2597C555008F6674 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98FB9B9C2597C555008F6674 /* Assets.xcassets */; };
 		CC32DDAD25B6644100574795 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC32DDAC25B6644100574795 /* LaunchScreen.storyboard */; };
@@ -24,6 +24,7 @@
 		EBCE761225B62A36007A471E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCE761125B62A36007A471E /* SettingsViewController.swift */; };
 		EBCE761925B633CC007A471E /* StateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCE761825B633CC007A471E /* StateTableViewCell.swift */; };
 		EBCE761D25B63DEA007A471E /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EBCE761C25B63DEA007A471E /* Settings.bundle */; };
+		EBEA86A725BA457500B7E945 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEA86A625BA457500B7E945 /* ProductTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +33,7 @@
 		98FB0A7B25A3FB83003B4F36 /* ShoppingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingItem.swift; sourceTree = "<group>"; };
 		98FB9B8D2597C553008F6674 /* HeltonHeltonLyanRicardo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeltonHeltonLyanRicardo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98FB9B902597C553008F6674 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		98FB9B942597C553008F6674 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		98FB9B942597C553008F6674 /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
 		98FB9B9A2597C553008F6674 /* HeltonHeltonLyanRicardo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HeltonHeltonLyanRicardo.xcdatamodel; sourceTree = "<group>"; };
 		98FB9B9C2597C555008F6674 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Model/Assets.xcassets; sourceTree = "<group>"; };
 		98FB9BA12597C555008F6674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,6 +47,7 @@
 		EBCE761125B62A36007A471E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		EBCE761825B633CC007A471E /* StateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateTableViewCell.swift; sourceTree = "<group>"; };
 		EBCE761C25B63DEA007A471E /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = HeltonHeltonLyanRicardo/Main/Settings.bundle; sourceTree = SOURCE_ROOT; };
+		EBEA86A625BA457500B7E945 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,15 @@
 			path = SupportingView;
 			sourceTree = "<group>";
 		};
+		EB13C00E25BA41D4007861E0 /* ProductList */ = {
+			isa = PBXGroup;
+			children = (
+				98FB9B942597C553008F6674 /* ProductListViewController.swift */,
+				EBEA86A625BA457500B7E945 /* ProductTableViewCell.swift */,
+			);
+			path = ProductList;
+			sourceTree = "<group>";
+		};
 		EB1B056325AFA6A200525FBA /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,8 +129,8 @@
 		EB1B056525AFA70B00525FBA /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				EB13C00E25BA41D4007861E0 /* ProductList */,
 				EBCE761B25B63C77007A471E /* Settings */,
-				98FB9B942597C553008F6674 /* ListTableViewController.swift */,
 				EB13C00325B9B913007861E0 /* NewProductViewController.swift */,
 			);
 			path = ViewController;
@@ -136,13 +147,13 @@
 		EB1B057725AFD8F100525FBA /* View */ = {
 			isa = PBXGroup;
 			children = (
-				EB13C00825BA3906007861E0 /* SupportingView */,
 				EB1B058225AFDAEF00525FBA /* Main.storyboard */,
 				CC32DDAC25B6644100574795 /* LaunchScreen.storyboard */,
 				EB1B058125AFDAEF00525FBA /* Settings.storyboard */,
 				EB1B058025AFDAEF00525FBA /* ShoppingList.storyboard */,
 				EB1B057F25AFDAEE00525FBA /* ShoppingSummary.storyboard */,
 				9875BECE25B3A63A00CED5F5 /* AddProduct.storyboard */,
+				EB13C00825BA3906007861E0 /* SupportingView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -233,11 +244,12 @@
 			files = (
 				98FB9B9B2597C553008F6674 /* HeltonHeltonLyanRicardo.xcdatamodeld in Sources */,
 				98FB0A7825A3F9CB003B4F36 /* UITableView+EmptyMessage.swift in Sources */,
-				98FB9B952597C553008F6674 /* ListTableViewController.swift in Sources */,
+				98FB9B952597C553008F6674 /* ProductListViewController.swift in Sources */,
 				EB13C00425B9B913007861E0 /* NewProductViewController.swift in Sources */,
 				98FB0A7C25A3FB83003B4F36 /* ShoppingItem.swift in Sources */,
 				98FB9B912597C553008F6674 /* AppDelegate.swift in Sources */,
 				EB13C00A25BA3922007861E0 /* ToolbarPickerView.swift in Sources */,
+				EBEA86A725BA457500B7E945 /* ProductTableViewCell.swift in Sources */,
 				EBCE761225B62A36007A471E /* SettingsViewController.swift in Sources */,
 				EBCE761925B633CC007A471E /* StateTableViewCell.swift in Sources */,
 			);
