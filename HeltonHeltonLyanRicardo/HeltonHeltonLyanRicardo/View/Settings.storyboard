@@ -11,7 +11,7 @@
         <!--Ajustes-->
         <scene sceneID="e1U-Ze-QDG">
             <objects>
-                <viewController id="Dgc-z3-bps" customClass="SettingsViewController" customModule="HeltonHeltonLyanRicardo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingsVC" id="Dgc-z3-bps" customClass="SettingsViewController" customModule="HeltonHeltonLyanRicardo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dAO-9q-ZfF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
