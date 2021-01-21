@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreData
+import AVFoundation
 
 class NewProductViewController: UIViewController {
 
@@ -73,26 +74,29 @@ class NewProductViewController: UIViewController {
                                        message: "De onde você quer escolher o poster",
                                        preferredStyle: .actionSheet)
         
-        let photoLibrary = UIAlertAction(title: "Biblioteca de fotos", style: .default) { _ in
-            let imagePicker = UIImagePickerController()
-            imagePicker.sourceType = .photoLibrary
-            imagePicker.allowsEditing = true
-            imagePicker.delegate = self
-            self.present(imagePicker, animated: true)
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
+            let photoLibrary = UIAlertAction(title: "Biblioteca de fotos", style: .default) { _ in
+                let imagePicker = UIImagePickerController()
+                imagePicker.sourceType = .photoLibrary
+                imagePicker.allowsEditing = true
+                imagePicker.delegate = self
+                self.present(imagePicker, animated: true)
+            }
+            action.addAction(photoLibrary)
         }
         
-        let camera = UIAlertAction(title: "Câmera", style: .default) { _ in
-            let imagePicker = UIImagePickerController()
-            imagePicker.sourceType = .camera
-            imagePicker.allowsEditing = true
-            imagePicker.delegate = self
-            self.present(imagePicker, animated: true)
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            let camera = UIAlertAction(title: "Câmera", style: .default) { _ in
+                let imagePicker = UIImagePickerController()
+                imagePicker.sourceType = .camera
+                imagePicker.allowsEditing = true
+                imagePicker.delegate = self
+                self.present(imagePicker, animated: true)
+            }
+            action.addAction(camera)
         }
         
         let cancel = UIAlertAction(title: "Cancelar", style: .cancel)
-        
-        action.addAction(photoLibrary)
-        action.addAction(camera)
         action.addAction(cancel)
         
         self.present(action, animated: true, completion: nil)
