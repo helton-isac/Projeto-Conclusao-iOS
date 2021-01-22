@@ -126,11 +126,11 @@ extension SettingsViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let state = states[indexPath.row]
-        
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "State", for: indexPath) as? StateTableViewCell else {
             return UITableViewCell()
         }
+        
+        let state = states[indexPath.row]
         
         cell.stateTextField?.text = state.value(forKeyPath: "name") as? String
         cell.taxTextField?.text = String(state.value(forKeyPath: "tax") as? Double ?? 0.0)
