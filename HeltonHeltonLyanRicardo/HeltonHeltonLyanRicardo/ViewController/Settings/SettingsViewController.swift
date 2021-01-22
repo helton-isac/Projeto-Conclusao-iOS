@@ -58,7 +58,6 @@ class SettingsViewController: UIViewController {
         self.statesTableView.reloadData()
     }
     
-    
     private func fetchStates() {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
         

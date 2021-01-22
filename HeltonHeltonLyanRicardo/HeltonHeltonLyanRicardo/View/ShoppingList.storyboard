@@ -49,7 +49,7 @@
                     <navigationItem key="navigationItem" title="Lista de Compras" id="x25-yJ-hcE">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="rYB-oX-wKi">
                             <connections>
-                                <segue destination="gOe-6V-KYX" kind="show" id="UAy-iR-a5T"/>
+                                <segue destination="gOe-6V-KYX" kind="show" id="dMF-zf-rgr"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -58,10 +58,10 @@
             </objects>
             <point key="canvasLocation" x="1938" y="3"/>
         </scene>
-        <!--AddProduct-->
+        <!--NewProductVC-->
         <scene sceneID="KtJ-Hk-A2X">
             <objects>
-                <viewControllerPlaceholder storyboardName="AddProduct" id="gOe-6V-KYX" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="AddProduct" referencedIdentifier="NewProductVC" id="gOe-6V-KYX" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="b9S-k7-ibh"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oRk-xo-SRJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
