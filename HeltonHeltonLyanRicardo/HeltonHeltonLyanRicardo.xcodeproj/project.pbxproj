@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		980DBEDB25BA611F00A80AA0 /* ShoppingSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980DBEDA25BA611F00A80AA0 /* ShoppingSummaryViewController.swift */; };
 		9875BECF25B3A63A00CED5F5 /* AddProduct.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9875BECE25B3A63A00CED5F5 /* AddProduct.storyboard */; };
 		98FB0A7825A3F9CB003B4F36 /* UITableView+EmptyMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FB0A7725A3F9CB003B4F36 /* UITableView+EmptyMessage.swift */; };
 		98FB0A7C25A3FB83003B4F36 /* ShoppingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FB0A7B25A3FB83003B4F36 /* ShoppingItem.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		980DBEDA25BA611F00A80AA0 /* ShoppingSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingSummaryViewController.swift; sourceTree = "<group>"; };
 		9875BECE25B3A63A00CED5F5 /* AddProduct.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddProduct.storyboard; sourceTree = "<group>"; };
 		98FB0A7725A3F9CB003B4F36 /* UITableView+EmptyMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+EmptyMessage.swift"; sourceTree = "<group>"; };
 		98FB0A7B25A3FB83003B4F36 /* ShoppingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingItem.swift; sourceTree = "<group>"; };
@@ -61,6 +63,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		980DBED925BA60AA00A80AA0 /* Summary */ = {
+			isa = PBXGroup;
+			children = (
+				980DBEDA25BA611F00A80AA0 /* ShoppingSummaryViewController.swift */,
+			);
+			path = Summary;
+			sourceTree = "<group>";
+		};
 		98FB9B842597C553008F6674 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +139,7 @@
 		EB1B056525AFA70B00525FBA /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				980DBED925BA60AA00A80AA0 /* Summary */,
 				EB13C00E25BA41D4007861E0 /* ProductList */,
 				EBCE761B25B63C77007A471E /* Settings */,
 				EB13C00325B9B913007861E0 /* NewProductViewController.swift */,
@@ -248,6 +259,7 @@
 				EB13C00425B9B913007861E0 /* NewProductViewController.swift in Sources */,
 				98FB0A7C25A3FB83003B4F36 /* ShoppingItem.swift in Sources */,
 				98FB9B912597C553008F6674 /* AppDelegate.swift in Sources */,
+				980DBEDB25BA611F00A80AA0 /* ShoppingSummaryViewController.swift in Sources */,
 				EB13C00A25BA3922007861E0 /* ToolbarPickerView.swift in Sources */,
 				EBEA86A725BA457500B7E945 /* ProductTableViewCell.swift in Sources */,
 				EBCE761225B62A36007A471E /* SettingsViewController.swift in Sources */,

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jZR-Yy-4Fe">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -10,14 +11,58 @@
         <!--Total da Compra-->
         <scene sceneID="Sul-dF-eco">
             <objects>
-                <viewController id="jZR-Yy-4Fe" sceneMemberID="viewController">
+                <viewController id="jZR-Yy-4Fe" customClass="ShoppingSummaryViewController" customModule="HeltonHeltonLyanRicardo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2I3-lc-RHL">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total em U$:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bR-Ub-CUm">
+                                <rect key="frame" x="16" y="124" width="382" height="34"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6EE-Az-dZ4">
+                                <rect key="frame" x="16" y="190" width="382" height="48"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total em R$:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJV-hm-A1s">
+                                <rect key="frame" x="16" y="318" width="382" height="34"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ra8-MX-drX">
+                                <rect key="frame" x="16" y="384" width="382" height="48"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="gfK-FU-YOF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sJV-hm-A1s" firstAttribute="top" secondItem="6EE-Az-dZ4" secondAttribute="bottom" constant="80" id="2ho-f7-VsZ"/>
+                            <constraint firstItem="ra8-MX-drX" firstAttribute="top" secondItem="sJV-hm-A1s" secondAttribute="bottom" constant="32" id="BYo-ao-aEa"/>
+                            <constraint firstItem="9bR-Ub-CUm" firstAttribute="leading" secondItem="gfK-FU-YOF" secondAttribute="leading" constant="16" id="Nsc-4u-ARf"/>
+                            <constraint firstItem="9bR-Ub-CUm" firstAttribute="top" secondItem="gfK-FU-YOF" secondAttribute="top" constant="80" id="Tqu-zl-Vro"/>
+                            <constraint firstItem="sJV-hm-A1s" firstAttribute="leading" secondItem="gfK-FU-YOF" secondAttribute="leading" constant="16" id="WNm-Zf-FTg"/>
+                            <constraint firstItem="6EE-Az-dZ4" firstAttribute="top" secondItem="9bR-Ub-CUm" secondAttribute="bottom" constant="32" id="YBD-ej-U74"/>
+                            <constraint firstItem="gfK-FU-YOF" firstAttribute="trailing" secondItem="ra8-MX-drX" secondAttribute="trailing" constant="16" id="aUX-l9-Cg5"/>
+                            <constraint firstItem="gfK-FU-YOF" firstAttribute="trailing" secondItem="sJV-hm-A1s" secondAttribute="trailing" constant="16" id="cvw-0z-DBs"/>
+                            <constraint firstItem="gfK-FU-YOF" firstAttribute="trailing" secondItem="9bR-Ub-CUm" secondAttribute="trailing" constant="16" id="dvm-Ir-9cA"/>
+                            <constraint firstItem="6EE-Az-dZ4" firstAttribute="leading" secondItem="gfK-FU-YOF" secondAttribute="leading" constant="16" id="ihu-6v-dvi"/>
+                            <constraint firstItem="ra8-MX-drX" firstAttribute="leading" secondItem="gfK-FU-YOF" secondAttribute="leading" constant="16" id="spw-gU-hTU"/>
+                            <constraint firstItem="gfK-FU-YOF" firstAttribute="trailing" secondItem="6EE-Az-dZ4" secondAttribute="trailing" constant="16" id="t1b-lm-E7C"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Total da Compra" image="Shopping" id="FTM-J4-i3q"/>
+                    <connections>
+                        <outlet property="dollarTotalLabel" destination="6EE-Az-dZ4" id="sXn-C5-Fij"/>
+                        <outlet property="realTotalLabel" destination="ra8-MX-drX" id="6pS-yl-vTI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z16-99-U4w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -28,6 +73,12 @@
         <image name="Shopping" width="22" height="22"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
