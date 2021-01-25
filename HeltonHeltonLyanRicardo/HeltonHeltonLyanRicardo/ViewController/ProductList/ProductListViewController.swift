@@ -70,7 +70,7 @@ class ProductListViewController: UITableViewController {
             cell.productImageView?.image = UIImage(named: "bag.fill.badge.plus")
         }
         cell.productNameLabel?.text = product.value(forKeyPath: "name") as? String
-        cell.productPriceLabel?.text = String(product.value(forKeyPath: "value") as? Double ?? 0.0)
+        cell.productPriceLabel?.text = String(product.value(forKeyPath: "price") as? Double ?? 0.0)
         
         return cell
     }
