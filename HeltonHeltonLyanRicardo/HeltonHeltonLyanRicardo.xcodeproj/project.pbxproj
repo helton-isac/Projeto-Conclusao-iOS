@@ -73,6 +73,14 @@
 			path = Summary;
 			sourceTree = "<group>";
 		};
+		9862CABB25BFB76700B72972 /* NewProduct */ = {
+			isa = PBXGroup;
+			children = (
+				EB13C00325B9B913007861E0 /* NewProductViewController.swift */,
+			);
+			path = NewProduct;
+			sourceTree = "<group>";
+		};
 		98FB9B842597C553008F6674 = {
 			isa = PBXGroup;
 			children = (
@@ -143,8 +151,8 @@
 			children = (
 				980DBED925BA60AA00A80AA0 /* Summary */,
 				EB13C00E25BA41D4007861E0 /* ProductList */,
+				9862CABB25BFB76700B72972 /* NewProduct */,
 				EBCE761B25B63C77007A471E /* Settings */,
-				EB13C00325B9B913007861E0 /* NewProductViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
