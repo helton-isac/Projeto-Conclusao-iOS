@@ -70,8 +70,8 @@ class NewProductViewController: UIViewController {
     }
     
     @objc private func changeProductPicture() {
-        let action = UIAlertController(title: "Selecionar poster",
-                                       message: "De onde você quer escolher o poster",
+        let action = UIAlertController(title: "Adicionar Imagem",
+                                       message: "De onde você quer escolher a imagem do produto?",
                                        preferredStyle: .actionSheet)
         
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {

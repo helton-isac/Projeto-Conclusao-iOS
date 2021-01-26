@@ -10,7 +10,7 @@ import CoreData
 
 class ProductListViewController: UITableViewController {
 
-    var products: [NSManagedObject] = [] {
+    var products: [Product] = [] {
         didSet {
             DispatchQueue.main.async {
                 self.tableView.reloadData()
@@ -29,14 +29,11 @@ class ProductListViewController: UITableViewController {
     }
     
     private func fetchProducts() {
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
-        
-        let managedContext = appDelegate.persistentContainer.viewContext
-        
-        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Product")
+        let fetchRequest: NSFetchRequest<Product> = Product.fetchRequest()
         
         do {
-            self.products = try managedContext.fetch(fetchRequest)
+            products = try context.fetch(fetchRequest)
+            tableView.reloadData()
         } catch let error as NSError {
             print("Could not fetch. \(error), \(error.userInfo)")
         }
@@ -63,14 +60,16 @@ class ProductListViewController: UITableViewController {
         
         let product = products[indexPath.row]
         
-        if let imageData = product.value(forKeyPath: "photo") as? Data {
-            let image = UIImage(data: imageData)
-            cell.productImageView?.image = image
+        if let imageData = product.photo {
+            cell.productImageView?.image = UIImage(data: imageData)
         } else {
             cell.productImageView?.image = UIImage(named: "bag.fill.badge.plus")
         }
-        cell.productNameLabel?.text = product.value(forKeyPath: "name") as? String
-        cell.productPriceLabel?.text = String(product.value(forKeyPath: "price") as? Double ?? 0.0)
+        cell.productNameLabel?.text = product.name
+        
+        if let price = product.price{
+            cell.productPriceLabel?.text = "\(price)"
+        }
         
         return cell
     }
