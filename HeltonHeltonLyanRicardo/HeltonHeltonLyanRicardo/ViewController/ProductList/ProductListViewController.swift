@@ -18,6 +18,13 @@ class ProductListViewController: UITableViewController {
         }
     }
     
+    let numberFormatter: NumberFormatter = {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .currency
+        numberFormatter.locale = Locale(identifier: "en_US")
+        return numberFormatter
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -68,7 +75,7 @@ class ProductListViewController: UITableViewController {
         cell.productNameLabel?.text = product.name
         
         if let price = product.price{
-            cell.productPriceLabel?.text = "\(price)"
+            cell.productPriceLabel?.text = numberFormatter.string(from: price)
         } else {
             cell.productPriceLabel?.text = ""
         }
