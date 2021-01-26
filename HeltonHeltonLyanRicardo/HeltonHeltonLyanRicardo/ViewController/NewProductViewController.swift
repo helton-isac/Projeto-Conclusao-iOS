@@ -114,7 +114,12 @@ class NewProductViewController: UIViewController {
     func validateProduct(_ product: Product) -> Bool {
         
         guard let name =  product.name, !name.isEmpty else {
-            showAlert(message: "Nome do produto é obrigatório")
+            showAlert(message: "Nome do produto é obrigatório!")
+            return false
+        }
+
+        guard let _ = product.photo else {
+            showAlert(message: "Imagem do produto é obrigatório!")
             return false
         }
         
@@ -124,7 +129,7 @@ class NewProductViewController: UIViewController {
         }
 
         guard let _ = product.price else {
-            showAlert(message: "Preço do produto é obrigatório")
+            showAlert(message: "Preço do produto é obrigatório!")
             return false
         }
 
@@ -136,7 +141,7 @@ class NewProductViewController: UIViewController {
         
         product.creditCard = creditCardSwitch.isOn
         product.name = productNameTextField.text
-        product.photo = image?.pngData() ?? productImageView.image?.pngData()
+        product.photo = image?.pngData()
         product.price = Decimal(string: priceTextField.text ?? "0" ) as NSDecimalNumber?
         product.state = selectedState as? State
         
