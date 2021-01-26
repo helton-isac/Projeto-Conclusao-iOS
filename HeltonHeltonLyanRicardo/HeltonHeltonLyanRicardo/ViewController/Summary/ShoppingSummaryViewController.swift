@@ -63,7 +63,7 @@ class ShoppingSummaryViewController: UIViewController {
                 realTotal = productRealTotalPrice + realTotal
             }
         }
-        dollarTotalLabel.text = "\(dollarTotal)"
-        realTotalLabel.text = "\(realTotal)"
+        dollarTotalLabel.text = String(format: "%.2f", NSDecimalNumber(decimal:dollarTotal).doubleValue)
+        realTotalLabel.text = String(format: "%.2f", NSDecimalNumber(decimal:realTotal).doubleValue)
     }
 }
