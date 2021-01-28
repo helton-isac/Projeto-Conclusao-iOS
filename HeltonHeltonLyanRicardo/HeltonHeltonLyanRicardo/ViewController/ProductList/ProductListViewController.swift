@@ -69,6 +69,20 @@ class ProductListViewController: UITableViewController {
         
         if let price = product.price{
             cell.productPriceLabel?.text = "\(price)"
+        } else {
+            cell.productPriceLabel?.text = ""
+        }
+        
+        if product.creditCard {
+            cell.productPaymentMode?.text = "Cartão de Crédito"
+        } else {
+            cell.productPaymentMode?.text = "Outro"
+        }
+        
+        if let state = product.state {
+            cell.productStateName?.text = state.name
+        } else {
+            cell.productStateName?.text = ""
         }
         
         return cell
