@@ -74,7 +74,7 @@ class ProductListViewController: UITableViewController {
         }
         
         if product.creditCard {
-            cell.productPaymentMode?.text = "Cartão de Crédito"
+            cell.productPaymentMode?.text = "Cartão"
         } else {
             cell.productPaymentMode?.text = "Outro"
         }
