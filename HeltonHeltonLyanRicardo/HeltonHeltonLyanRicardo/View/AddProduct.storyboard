@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wOp-0w-ooV">
-    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -14,47 +14,47 @@
             <objects>
                 <viewController storyboardIdentifier="NewProductVC" title="Cadastrar Produto" id="mcW-5u-9Kx" customClass="NewProductViewController" customModule="HeltonHeltonLyanRicardo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xgD-9I-HCA">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome do Produto" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V95-r5-5Id">
-                                <rect key="frame" x="20" y="64" width="280" height="34"/>
+                                <rect key="frame" x="20" y="108" width="388" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Estado da compra" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hw5-7Q-Pws">
-                                <rect key="frame" x="20" y="319" width="225" height="34"/>
+                                <rect key="frame" x="20" y="382" width="333" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Valor (U$)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z8P-TM-4Ep">
-                                <rect key="frame" x="20" y="373" width="131" height="34"/>
+                                <rect key="frame" x="20" y="436" width="239" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" image="bag.fill.badge.plus" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="a2p-nS-NpD">
-                                <rect key="frame" x="18" y="117.5" width="282" height="182"/>
+                                <rect key="frame" x="18" y="162" width="390" height="200.33333333333334"/>
                                 <constraints>
                                     <constraint firstAttribute="height" priority="750" constant="200" id="iIA-x3-XCD"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Cartão?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jO-Of-lhe">
-                                <rect key="frame" x="171" y="379.5" width="60" height="21"/>
+                                <rect key="frame" x="279" y="442.66666666666669" width="60" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="750" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="f9V-CK-xI0">
-                                <rect key="frame" x="241" y="374.5" width="51" height="31"/>
+                                <rect key="frame" x="349" y="437.66666666666669" width="51" height="31"/>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EEz-wg-0Ua">
-                                <rect key="frame" x="265" y="324" width="25" height="24"/>
+                                <rect key="frame" x="373" y="387" width="25" height="24"/>
                                 <connections>
                                     <segue destination="Cs7-hc-2la" kind="show" id="b7J-l8-DWm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="De4-0t-ZXA">
-                                <rect key="frame" x="20" y="427" width="280" height="48"/>
+                                <rect key="frame" x="20" y="490" width="388" height="48"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="fag-xV-Zf7"/>
@@ -83,14 +83,13 @@
                             <constraint firstItem="z8P-TM-4Ep" firstAttribute="top" secondItem="hw5-7Q-Pws" secondAttribute="bottom" constant="20" id="MLa-dV-fJS"/>
                             <constraint firstItem="hw5-7Q-Pws" firstAttribute="top" secondItem="a2p-nS-NpD" secondAttribute="bottom" constant="20" id="MTq-Q3-nqH"/>
                             <constraint firstItem="f9V-CK-xI0" firstAttribute="leading" secondItem="3jO-Of-lhe" secondAttribute="trailing" constant="10" id="OaY-Ja-eTe"/>
-                            <constraint firstAttribute="bottom" secondItem="De4-0t-ZXA" secondAttribute="bottom" constant="5" id="Pfi-k2-7Tq"/>
                             <constraint firstItem="z8P-TM-4Ep" firstAttribute="leading" secondItem="2Qv-0C-m09" secondAttribute="leading" constant="20" id="Pyq-n9-yOI"/>
                             <constraint firstItem="a2p-nS-NpD" firstAttribute="top" secondItem="V95-r5-5Id" secondAttribute="bottom" constant="20" id="WY5-3q-8Nu"/>
                             <constraint firstItem="EEz-wg-0Ua" firstAttribute="centerY" secondItem="hw5-7Q-Pws" secondAttribute="centerY" id="ZqS-0m-zFS"/>
                             <constraint firstItem="2Qv-0C-m09" firstAttribute="trailing" secondItem="f9V-CK-xI0" secondAttribute="trailing" constant="30" id="ceq-s5-cO4"/>
                             <constraint firstItem="V95-r5-5Id" firstAttribute="top" secondItem="2Qv-0C-m09" secondAttribute="top" constant="20" id="cjH-ho-ZKH"/>
-                            <constraint firstItem="De4-0t-ZXA" firstAttribute="top" relation="greaterThanOrEqual" secondItem="z8P-TM-4Ep" secondAttribute="bottom" constant="20" id="hZr-BN-ZKH"/>
                             <constraint firstItem="hw5-7Q-Pws" firstAttribute="leading" secondItem="2Qv-0C-m09" secondAttribute="leading" constant="20" id="l4s-yU-zlI"/>
+                            <constraint firstItem="De4-0t-ZXA" firstAttribute="top" secondItem="z8P-TM-4Ep" secondAttribute="bottom" constant="20" id="tSV-i7-uDI"/>
                             <constraint firstItem="3jO-Of-lhe" firstAttribute="leading" secondItem="z8P-TM-4Ep" secondAttribute="trailing" constant="20" id="xyB-ab-FIg"/>
                         </constraints>
                     </view>
@@ -123,7 +122,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wOp-0w-ooV" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="uiQ-XM-86c">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
