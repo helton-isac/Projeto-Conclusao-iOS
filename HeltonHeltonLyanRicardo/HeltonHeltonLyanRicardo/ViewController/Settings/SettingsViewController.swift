@@ -146,6 +146,19 @@ extension SettingsViewController: UITableViewDataSource, UITableViewDelegate {
             let state = self.states[indexPath.row]
             context.delete(state)
             
+            let fetchRequest: NSFetchRequest<Product> = Product.fetchRequest()
+            let predicate = NSPredicate(format: "state == %@", state)
+            fetchRequest.predicate = predicate
+            
+            do {
+                let products = try context.fetch(fetchRequest)
+                for product in products {
+                    context.delete(product)
+                }
+            } catch let error as NSError {
+                print("Could not find products associated to state. \(error), \(error.userInfo)")
+            }
+            
             do {
                 try context.save()
                 self.states.remove(at: indexPath.row)
