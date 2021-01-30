@@ -25,6 +25,7 @@
 - [Integrantes](#integrantes)
 - [Professor](#professor)
 - [Desafio](#desafio)
+- [Demonstração](#demonstração)
 - [Freepik](#freepik)
 
 ## Integrantes
